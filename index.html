@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>Photo Gallery</h1>
+        
+        <!-- Image Grid -->
+        <div class="gallery-grid">
+            <!-- Hum direct high-quality Unsplash placeholder images use kar rahe hain -->
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" alt="Beach">
+                <div class="overlay">Beach View</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500" alt="Mountains">
+                <div class="overlay">Mountains</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500" alt="Forest">
+                <div class="overlay">Forest</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=500" alt="Nature">
+                <div class="overlay">Nature</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(4)">
+                <img src="https://images.unsplash.com/photo-1472214222541-d510753a4707?w=500" alt="Valley">
+                <div class="overlay">Green Valley</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(4)">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500" alt="Valley">
+                <div class="overlay">Green Valley</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal (Click karne par barhi image dekhne ke liye) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <span class="prev-btn" onclick="prevImage()">&#10094;</span>
+        <img id="lightbox-img" src="" alt="Popup View">
+        <span class="next-btn" onclick="nextImage()">&#10095;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
