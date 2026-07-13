@@ -14,4 +14,4 @@ A beautiful, responsive image gallery with modern hover effects and a smooth lig
 - JavaScript (ES6+)
 
 ## Screenshots
-*(Add a screenshot here of your working gallery!)*
+![Gallery Screenshot](gallery.png)
